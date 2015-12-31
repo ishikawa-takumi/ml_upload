@@ -20,7 +20,7 @@ post '/upload' do
 		@mes = "Faile"
 	end
 
-	@result_analisis = `ML/deepbelief #{save_path} ML/jetpac.ntwk | sort -r -n -k2 | awk '$2>0.000005{print $0}'`
+	@result_analisis = `ML/deepbelief #{save_path} ML/jetpac.ntwk | sort -r -n -k2  |head -n 4 | awk '{print $0; sum+=$2}END{printf("0\\t%f\\tothers", 1-sum)}'`
 	erb :result
 end
 
