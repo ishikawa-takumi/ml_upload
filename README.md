@@ -1,6 +1,6 @@
 # ml_upload
 
-cd ML
-make
-cd ..
-ruby app.rb
+cd ML<br/>
+make<br/>
+cd ..<br/>
+ruby app.rb<br/>
