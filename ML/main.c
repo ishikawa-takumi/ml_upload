@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-#include <libjpcnn.h>
+#include "libjpcnn.h"
 
 #define NETWORK_FILE_NAME "jetpac.ntwk"
 
